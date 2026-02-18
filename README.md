@@ -13,6 +13,8 @@
 
 ---
 
+### imp : this uses Collaborative learning
+
 ## Project Structure
 
 ```
@@ -29,10 +31,21 @@ project/
 ├── recsys_model.pth # Saved model weights
 ```
 
+## How to Setup in Windows
+
+
+initially make sure you have python and git in your system
+```bash
+python --version
+git --version
+
+```
+
+
 Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/rcmd_system.git
+git clone https://github.com/axtr05/rcmd_system.git
 cd rcmd_system
 ```
 
@@ -50,7 +63,7 @@ venv\Scripts\activate
 pip install torch pandas scikit-learn tez
 ```
 
-go to src dir
+4. go to src dir
 
 ```bash
 cd src
@@ -61,7 +74,7 @@ cd src
 Run training script:
 
 ```bash
-python src/train.py
+python train.py
 ```
 
 This will generate:
@@ -69,8 +82,30 @@ recsys_model.pth
 
 ## Get Movie Recommendations
 
-Run: 
+ Run: 
 ```bash
-python src/rcmd.py
+python recommend.py
 ```
+
+input any user id that you see in test_v2.csv
+
+#### for example: 
+
+```
+for the input of userID : 285
+
+Top recommendations:
+2019 → 4.72
+318 → 4.71
+1148 → 4.68
+745 → 4.68
+858 → 4.68
+
+the following should be the output 
+```
+
+
+
+
+
 
